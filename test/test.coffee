@@ -7,7 +7,7 @@ FrequentDirection = require('../src/fd.coffee')
 describe 'frequent direction', () ->
   it 'calc', () ->
     N = 1000
-    D = 100
+    D = 50
     A = []
     for i in [0...N]
       A.push []
@@ -15,5 +15,3 @@ describe 'frequent direction', () ->
     
     L = 2*D-1
     B = FrequentDirection.sketch(A,L)
-
-    console.log B
